@@ -1,0 +1,73 @@
+.booking-confirmed h2 {
+  color: #495e57;
+}
+.booking-form,
+.booking-confirmed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.booking-wrapper {
+  /* width: 40%; */
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.booking button {
+  cursor: pointer;
+  padding: 1.5em 2em;
+  background: #f4ce14;
+  color: #495e57;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+.booking-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.booking-wrapper input,
+.booking-wrapper select {
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 400px;
+  border: 1px solid #6cbea3;
+}
+
+.booking button:disabled {
+  cursor: default;
+  padding: 1.5em 2em;
+  background: gray;
+}
+
+.booking {
+  display: grid;
+  gap: 20px;
+}
+.booking input {
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.error {
+  color: rgb(154, 36, 36);
+}
+
+.menuImg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 550px) {
+  .booking-wrapper input,
+  .booking-wrapper select {
+    width: 300px;
+  }
+}
